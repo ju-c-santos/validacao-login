@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   margin: 50px auto; 
+   width: 400px;
+   background-color: bisque;
+   color: rgb(136, 43, 43);
+   font-size: 16px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+#escolhaUsuario{
+    margin-left: 30%;
+}
+
+#escolhaUsuario label, #escolhaUsuario input, #escolhaUsuario p{
+    display: inline;
+    margin-top: 15px;
+}
