@@ -62,9 +62,18 @@ h2{
     cursor: pointer;
 }
 
+.password{
+    margin-left: -12px;
+    
+}
 
 .password img{
-    width: px
+    width: 20px;
+    float: left;
+    position: relative;
+    margin-top: 2px;
+    left: 20%;
+
 }
 
 
