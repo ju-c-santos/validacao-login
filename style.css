@@ -1,3 +1,15 @@
+:root{
+    /*MAIN COLOR*/
+    --background: bisque;
+    --text-color: rgb(136, 43, 43);
+
+    /*ERROR COLOR */
+    --background-error: rgb(250, 211, 217);
+    --text-color-error: firebrick ;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +19,10 @@
 body{
    margin: 50px auto; 
    width: 400px;
-   background-color: bisque;
-   color: rgb(136, 43, 43);
+   background-color: var(--background);
+   color: var(--text-color);
    font-size: 16px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2{
@@ -25,4 +38,44 @@ h2{
 #escolhaUsuario label, #escolhaUsuario input, #escolhaUsuario p{
     display: inline;
     margin-top: 15px;
+}
+
+#conteudo input{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    width: 50%;
+    height: 25px;
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#botao{
+    border: none;
+    color: var(--background-error);
+    background: var(--text-color);
+    font-size: 0.9em;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 40%;
+    cursor: pointer;
+}
+
+
+.password img{
+    width: px
+}
+
+
+.styleError{
+    width: 50%;
+    margin: 10px auto 30px auto;
+    background-color: var(--background-error);
+    padding: 15px;
+    border: solid 2px var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color-error);
+    font-size: 1.1em;
+    display: none;
 }

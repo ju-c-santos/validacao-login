@@ -10,15 +10,30 @@
 
     <h2>Fazer Login: </h2>
 
-    <form action="get" id="escolhaUsuario">
+    <form id="escolhaUsuario">  
+        <input type="radio" name="user" id="email" value="email">
         <label for="user">E-mail</label>
-        <input type="radio" name="user" id="email">
         <p> | </p>
+        <input type="radio" name="user" id="nickname" value="nickname">
         <label for="user">Nickname</label>
-        <input type="radio" name="user" id="nickname">
     </form>
 
+    <form id="conteudo">
+        <input type="text" name="usuario" id="usuario" placeholder="usuário">
+        <p id="userError" class="styleError"></p>
 
+        <div class="password">
+            <img src="img/hide.png" alt="mostrar">
+            <input type="password" name="senha" id="senha" placeholder="senha">
+        </div>
+        
+        <p id="senhaError" class="styleError"></p>
+
+
+        <input type="submit" value="Enviar" id="botao">
+    </form>
+
+    
 
 
     <script src="code.js"></script>
