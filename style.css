@@ -79,13 +79,13 @@ h2{
 
 
 .styleError{
-    width: 50%;
-    margin: 10px auto 30px auto;
+    width: 55%;
+    margin: 10px auto 30px 100px;
     background-color: var(--background-error);
     padding: 15px;
     border: solid 2px var(--text-color);
     border-radius: 5px;
     color: var(--text-color-error);
-    font-size: 1.1em;
+    font-size: 0.9em;
     display: none;
 }

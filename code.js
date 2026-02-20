@@ -74,9 +74,46 @@ verSenha.addEventListener('click', (ver) => {
 
 /// senha evento blur
 senha.addEventListener('blur', (senhaV) => {
+    senhaValor = senha.value
+    msgError = document.getElementById('senhaError');
+    const minimo = 8;
+    const maiusculo =/[A-Z]/.test(senhaValor);
+    const minusculo = /[a-z]/.test(senhaValor);
+    const especial = /[@ # $ % & * () = + § ? ° - _ ]/.test(senhaValor);
+
+    msgError.innerHTML = '<strong>SENHA INVÁLIDA<br>Deve conter:</strong>  <br>'
+    
+    if (senhaValor.length < minimo){
+        msgError.style.display = 'block';
+        msgError.innerHTML += 'Mínimo de 8 caracteres; <br>';
+       
+    } 
+
+    if (!(maiusculo)){
+        msgError.style.display = 'block';
+        msgError.innerHTML += 'Letras maiúsculas; <br>';
+       
+    } 
+
+    if (!(minusculo)){
+        msgError.style.display = 'block';
+        msgError.innerHTML += 'Letras minúsculas; <br>';
+       
+    } 
+
+    if(!(especial)){
+        msgError.style.display = 'block';
+        msgError.innerHTML += 'Caracteres especiais; <br>';
+       
+    }
+    
+    if (senhaValor.length >= minimo && maiusculo && minusculo && especial) {
+        msgError.style.display = 'none';
+        msgError.innerHTML = ' ';
+    }
+    
+    
    
-
-
     
 })
 
