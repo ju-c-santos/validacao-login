@@ -110,9 +110,7 @@ senha.addEventListener('blur', (senhaV) => {
     if (senhaValor.length >= minimo && maiusculo && minusculo && especial) {
         msgError.style.display = 'none';
         msgError.innerHTML = ' ';
-    }
-    
-    
+    } 
    
     
 })
